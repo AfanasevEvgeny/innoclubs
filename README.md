@@ -1,2 +1,2 @@
 # innoclubs
-InnoClubs working repository
+InnoClubs proj repository
