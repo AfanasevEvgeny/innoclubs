@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="react">
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="react-add2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,7 @@
       <workItem from="1601585953314" duration="226000" />
       <workItem from="1601586200712" duration="1901000" />
       <workItem from="1602183008148" duration="1030000" />
-      <workItem from="1602191922103" duration="2189000" />
+      <workItem from="1602191922103" duration="3087000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <created>1602183399480</created>
@@ -82,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602183399480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="react-add2">
+      <created>1602194345686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602194345686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +109,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react" />
-    <option name="LAST_COMMIT_MESSAGE" value="react" />
+    <MESSAGE value="react-add2" />
+    <option name="LAST_COMMIT_MESSAGE" value="react-add2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="236" key="#Notifications" timestamp="1601584688251">
@@ -141,6 +149,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601586752401" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602194357939">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602194357939" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602192547579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
