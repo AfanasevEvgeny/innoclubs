@@ -1,16 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './AppWrapper.css';
+import Content from "./Components/Content/Content";
+import NavBarLeft from "./Components/NavBarLeft/NavBarLeft";
+import TopNav from "./Components/TopNav/TopNav";
+import Footer from "./Components/Footer/Footer";
 
-function App() {
+const App =()=>{
   return (
-    <div className="App">
-    test
-   
-      <header className="App-header">
-          <h1>test</h1>
-      </header>
-    </div>
+      <div className="AppWrapper">
+          <TopNav/>
+          <NavBarLeft/>
+          <Content/>
+          <Footer/>
+      </div>
   );
 }
 
