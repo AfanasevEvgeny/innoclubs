@@ -1,0 +1,10 @@
+.navbarleft {
+    background-color: #626262;
+    grid-area: nav;
+}
+
+.sidenav {
+    height: 100%;
+    width: 100%;
+
+}

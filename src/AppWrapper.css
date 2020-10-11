@@ -1,0 +1,16 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.AppWrapper{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template: [header-left] "head head" 15% [header-right]
+                 [main-left]   "nav  main" 3fr  [main-right]
+                 [footer-left] "nav  foot" 10% [footer-right]
+                 / 14% 1fr;
+}
+
