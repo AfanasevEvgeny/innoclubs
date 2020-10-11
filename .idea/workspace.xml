@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="">
+    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="mongoDB initial setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mugger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,10 @@
       <workItem from="1602257686434" duration="890000" />
       <workItem from="1602268328696" duration="618000" />
       <workItem from="1602270169761" duration="252000" />
-      <workItem from="1602336945803" duration="1880000" />
+      <workItem from="1602336945803" duration="2319000" />
+      <workItem from="1602435218069" duration="635000" />
+      <workItem from="1602447838220" duration="112000" />
+      <workItem from="1602448355173" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <created>1602183399480</created>
@@ -106,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602257765192</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mongoDB initial setup">
+      <created>1602339756567</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602339756567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react" />
     <MESSAGE value="react-add2" />
-    <option name="LAST_COMMIT_MESSAGE" value="react-add2" />
+    <MESSAGE value="mongoDB initial setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongoDB initial setup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="236" key="#Notifications" timestamp="1601584688251">
@@ -166,9 +176,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601586752401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602194357939">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1469" y="183" key="Vcs.Push.Dialog.v2" timestamp="1602339793433">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1469" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602339793433" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602194357939" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602192547579">
       <screen x="0" y="0" width="1536" height="824" />
