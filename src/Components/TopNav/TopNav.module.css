@@ -1,4 +1,43 @@
 .topnav{
-    background-color:#61892f;
+    background-color: #1b4e1b;
     grid-area: head;
+    height: 100%;
+}
+.wrapper{
+    display: flex;
+    height:100%;
+    padding:1%;
+}
+.item{
+    height: 100%;
+    width: 100px;
+    background-color: #222629;
+}
+.itemCenter{
+    flex-grow: 1;
+}
+
+.item + .item {
+    margin-left: 2%;
+}
+.logo{
+color:whitesmoke;
+
+}
+.headcontent{
+padding: 1%;
+}
+.account{
+color:white;
+}
+.myInput {
+    background-image: url('searchLogo.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 30%;
+    /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
 }
