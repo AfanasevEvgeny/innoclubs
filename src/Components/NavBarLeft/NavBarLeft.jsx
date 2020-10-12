@@ -12,8 +12,7 @@ const NavBarLeft = () => {
                 </div>
                 <div className={s.items}>
                     <div className={s.item_wrapper}><a href="#">About</a></div>
-                    <div className={s.item_wrapper}><a href="#">Services</a></div>
-                    <div className={s.item_wrapper}><a href="#">Clients</a></div>
+                    <div className={s.item_wrapper}><a href="#">Clubs</a></div>
                     <div className={s.item_wrapper}><a href="#">Contact</a></div>
                 </div>
             </div>
