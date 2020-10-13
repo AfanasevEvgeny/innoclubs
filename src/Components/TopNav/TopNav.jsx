@@ -4,7 +4,7 @@ import s from './topnav.module.css'
 const TopNav = () => {
     return (
         <div className={s.topnav}>
-            topnav
+            topnavv
         </div>
     );
 }
