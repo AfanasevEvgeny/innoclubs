@@ -1,11 +1,12 @@
-import React from "react";
-import s from './Content.module.css'
-import ClubsList from "./Clubslist/ClubsList";
-const Content =()=>{
-    return(
+import React from 'react';
+import s from './content.module.css'
+
+const Content = () => {
+    return (
         <div className={s.content}>
-            <ClubsList/>
+            content
         </div>
-    )
+    );
 }
-export default Content
+
+export default Content;

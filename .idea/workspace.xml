@@ -19,7 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="remove mistake" />
+    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="Timur omg &lt;br/&gt;">
+      <change afterPath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Menu/menu.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Menu/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWrapper.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWrapper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Clubslist/ClubsList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Clubslist/ClubsList.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Footer.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBarLeft/NavBarLeft.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBarLeft/NavBarLeft.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/TopNav.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +51,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,22 +77,28 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactlearning" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="" />
+      <changelist id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="Timur omg &lt;br/&gt;" />
       <created>1600690994936</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -83,6 +111,8 @@
       <workItem from="1602184251419" duration="18000" />
       <workItem from="1602255778631" duration="170000" />
       <workItem from="1602451697452" duration="326000" />
+      <workItem from="1602459610262" duration="15000" />
+      <workItem from="1602601535505" duration="20981000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -147,11 +177,18 @@
       <option name="project" value="LOCAL" />
       <updated>1600701631999</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Timur omg &lt;br/&gt;">
+      <created>1602452770199</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602452770200</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -176,7 +213,8 @@
     <MESSAGE value="should hopefully work with heroku&#10;(added proc)&#10;attempt #3&#10;restructured the project for heroku" />
     <MESSAGE value="heroku test #4" />
     <MESSAGE value="heroku test #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku test #5" />
+    <MESSAGE value="Timur omg &lt;br/&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Timur omg &lt;br/&gt;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -184,17 +222,34 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602601563319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602601563319" />
     <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1600701631868">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600701631868" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1600701635204">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602604621671">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602604621671" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1602452779440">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600701635204" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602452779440" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602451713444">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602451713444" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602617771186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602617771186" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602604997668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602604997668" />
   </component>
 </project>

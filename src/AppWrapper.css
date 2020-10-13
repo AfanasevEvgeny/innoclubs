@@ -6,11 +6,11 @@
 }
 .AppWrapper{
     display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template: [header-left] "head head" 15% [header-right]
-                 [main-left]   "nav  main" 3fr  [main-right]
-                 [footer-left] "nav  foot" 10% [footer-right]
-                 / 14% 1fr;
-}
+    grid-template-areas:
+    "header header"
+    "menu main";
+    grid-template-rows: 2fr 10fr;
+    grid-template-columns: 13% 87%;
 
+    min-height: 100vh;
+}

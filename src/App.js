@@ -1,18 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './AppWrapper.css';
-import Content from "./Components/Content/Content";
-import NavBarLeft from "./Components/NavBarLeft/NavBarLeft";
 import TopNav from "./Components/TopNav/TopNav";
-import Footer from "./Components/Footer/Footer";
+import MenuNav from "./Components/Menu/MenuNav";
+import Content from "./Components/Content/Content";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App =()=>{
-  return (
-      <div className="AppWrapper">
-          <TopNav/>
-          <NavBarLeft/>
-          <Content/>
-          <Footer/>
+const App = () => {
+    return (
+        <div className="AppWrapper">
+
+            <TopNav/>
+            <MenuNav/>
+            <Content/>
       </div>
   );
 }
