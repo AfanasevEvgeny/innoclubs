@@ -12,7 +12,7 @@ const App = (props) => {
             <div className="AppWrapper">
                 <TopNav/>
                 <MenuNav/>
-                <Content ClubsData={props.AppState.ClubsData}/>
+                <Content ClubsData={props.AppState.ClubsData} MyClubsData={props.AppState.MyClubsData}/>
             </div>
         </BrowserRouter>
     );
