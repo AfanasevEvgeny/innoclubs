@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +87,7 @@
       <workItem from="1602184251419" duration="18000" />
       <workItem from="1602255778631" duration="170000" />
       <workItem from="1602451697452" duration="6889000" />
-      <workItem from="1602760710146" duration="11793000" />
+      <workItem from="1602760710146" duration="12445000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -193,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602768174478</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added user club list + link with front&#10;added filtered (member-only/leader-only/any/my) club list fetching from database">
+      <created>1602777509364</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602777509364</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added user club list + link with front&#10;added filtered (member-only/leader-only/any/my) club list fetching from database&#10;forgot react-scripts start -&gt; node server.js">
+      <created>1602778556993</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602778556993</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +223,9 @@
     <MESSAGE value="club info added (nav names changed)" />
     <MESSAGE value="database link test" />
     <MESSAGE value="added user club list + link with front" />
-    <option name="LAST_COMMIT_MESSAGE" value="added user club list + link with front" />
+    <MESSAGE value="added user club list + link with front&#10;added filtered (member-only/leader-only/any/my) club list fetching from database" />
+    <MESSAGE value="added user club list + link with front&#10;added filtered (member-only/leader-only/any/my) club list fetching from database&#10;forgot react-scripts start -&gt; node server.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="added user club list + link with front&#10;added filtered (member-only/leader-only/any/my) club list fetching from database&#10;forgot react-scripts start -&gt; node server.js" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -223,34 +233,39 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
-    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1602768174293">
+    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1602778556669">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602768174293" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1602776055505">
+    <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602778556669" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1602778588743">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602776055505" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1602776055504">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602778588743" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1602778588742">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602776055504" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1602776055503">
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602778588742" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1602778588741">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602776055503" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1602776055505">
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602778588741" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1602778588743">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602776055505" />
-    <state x="431" y="173" key="MultipleFileMergeDialog" timestamp="1602761427507">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602778588743" />
+    <state x="144" y="60" key="MergeDialog" timestamp="1602778583666">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="144" y="60" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1602778583666" />
+    <state x="431" y="154" key="MultipleFileMergeDialog" timestamp="1602778585129">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1602778585129" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602768183360">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602778560965">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602768183360" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602778560965" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602761416373">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
