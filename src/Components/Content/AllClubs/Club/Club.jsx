@@ -4,6 +4,7 @@ import {Card} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 
 const Club = (props) => {
+
     return (
         <div className={s.clubWrapper}>
             <Card style={{width: '15rem'}}>
