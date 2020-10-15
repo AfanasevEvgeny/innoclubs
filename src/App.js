@@ -1,19 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './AppWrapper.css';
 import TopNav from "./Components/TopNav/TopNav";
 import MenuNav from "./Components/Menu/MenuNav";
 import Content from "./Components/Content/Content";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter} from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
     return (
-        <div className="AppWrapper">
-            <TopNav/>
-            <MenuNav/>
-            <Content/>
-      </div>
-  );
+        <BrowserRouter>
+            <div className="AppWrapper">
+                <TopNav/>
+                <MenuNav/>
+                <Content ClubsData={props.AppState.ClubsData}/>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

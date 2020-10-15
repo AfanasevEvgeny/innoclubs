@@ -1,12 +1,12 @@
 import React from 'react';
+import AllClubs from "./AllClubs/AllClubs";
 import s from './content.module.css'
+import Route from "react-router-dom/es/Route";
 
-const Content = () => {
+const Content = (props) => {
     return (
         <div className={s.content}>
-            content
-            <br/>
-            sssf
+            <Route path='/allClubs' render={() => <AllClubs ClubsData={props.ClubsData}/>}/>
         </div>
     );
 }

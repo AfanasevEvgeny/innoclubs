@@ -19,13 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="Done with LeftNav Design, Added Bootstrap, Icons">
+    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="Adaptive Menu nav (&lt;1100px devices)">
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/AllClubs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/club.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/allClubsWrapper.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWrapper.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWrapper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +105,8 @@
       <workItem from="1602451697452" duration="326000" />
       <workItem from="1602459610262" duration="15000" />
       <workItem from="1602601535505" duration="23240000" />
-      <workItem from="1602675941484" duration="1553000" />
+      <workItem from="1602675941484" duration="16572000" />
+      <workItem from="1602757331442" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -192,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602626983105</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Adaptive Menu nav (&lt;1100px devices)">
+      <created>1602677667396</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602677667396</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +237,8 @@
     <MESSAGE value="heroku test #5" />
     <MESSAGE value="Timur omg &lt;br/&gt;" />
     <MESSAGE value="Done with LeftNav Design, Added Bootstrap, Icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done with LeftNav Design, Added Bootstrap, Icons" />
+    <MESSAGE value="Adaptive Menu nav (&lt;1100px devices)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptive Menu nav (&lt;1100px devices)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -239,10 +254,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600701631868" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602604621671">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602679762071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602604621671" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602679762071" />
     <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1602626140968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -251,11 +266,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="556" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602625938841" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1602626987375">
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1602677675855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600701635204" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602626987375" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602677675855" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602451713444">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -268,16 +283,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602604997668" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Components/Content/Content.jsx</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
