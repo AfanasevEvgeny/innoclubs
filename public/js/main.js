@@ -1,3 +1,7 @@
+// import ReactDOM from "react-dom";
+// import React from "react";
+// import App from "./App";
+// import state from "../../src/Redux/state";
 console.log("hello from main.js");
 
 // Firebase configuration
@@ -50,6 +54,14 @@ db_root.child('users').child('aladdinych').child('clubs').on('value', function (
             {
                 state.ClubsData = clubs_to_show;
                 console.log("new state clubs data", state.ClubsData);
+
+
+                // ReactDOM.render(
+                //     <React.StrictMode>
+                //         <App AppState={state}/>
+                //     </React.StrictMode>,
+                //     document.getElementById('root')
+                // );
             }
         });
     }

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -91,7 +92,7 @@
       <workItem from="1602184251419" duration="18000" />
       <workItem from="1602255778631" duration="170000" />
       <workItem from="1602451697452" duration="6889000" />
-      <workItem from="1602760710146" duration="4105000" />
+      <workItem from="1602760710146" duration="5908000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -177,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602498720994</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="database link test">
+      <created>1602765687436</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602765687437</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +205,8 @@
     <MESSAGE value="club info added" />
     <MESSAGE value="club info added (lil fix)" />
     <MESSAGE value="club info added (nav names changed)" />
-    <option name="LAST_COMMIT_MESSAGE" value="club info added (nav names changed)" />
+    <MESSAGE value="database link test" />
+    <option name="LAST_COMMIT_MESSAGE" value="database link test" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -205,34 +214,34 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
-    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1602498720835">
+    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1602768147441">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602498720835" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1602764865413">
+    <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602768147441" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1602766372542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602764865413" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1602764865412">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602766372542" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1602766372541">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602764865412" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1602764865411">
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602766372541" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1602766372541">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602764865411" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1602764865412">
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602766372541" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1602766372542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602764865412" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602766372542" />
     <state x="431" y="173" key="MultipleFileMergeDialog" timestamp="1602761427507">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602498724155">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602765708843">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602498724155" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602765708843" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602761416373">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

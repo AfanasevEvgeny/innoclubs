@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import state from './Redux/state'
-ReactDOM.render(
-  <React.StrictMode>
-      <App AppState={state}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+setTimeout(function ()
+{
+    ReactDOM.render(
+        <React.StrictMode>
+            <App AppState={state}/>
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+}, 1500);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
