@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="Adaptive Menu nav (&lt;1100px devices)">
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/AllClubs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/club.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/allClubsWrapper.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +18,6 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -63,34 +37,48 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactlearning" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b7097b5-6370-43e6-aee7-d6479368afeb" name="Default Changelist" comment="Timur omg &lt;br/&gt;" />
+      <changelist id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="" />
       <created>1600690994936</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -102,11 +90,8 @@
       <workItem from="1601122138000" duration="1105000" />
       <workItem from="1602184251419" duration="18000" />
       <workItem from="1602255778631" duration="170000" />
-      <workItem from="1602451697452" duration="326000" />
-      <workItem from="1602459610262" duration="15000" />
-      <workItem from="1602601535505" duration="23240000" />
-      <workItem from="1602675941484" duration="16572000" />
-      <workItem from="1602757331442" duration="4000" />
+      <workItem from="1602451697452" duration="6889000" />
+      <workItem from="1602760710146" duration="4105000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -171,58 +156,32 @@
       <option name="project" value="LOCAL" />
       <updated>1600701631999</updated>
     </task>
-    <task id="LOCAL-00010" summary="Timur omg &lt;br/&gt;">
-      <created>1602452770199</created>
+    <task id="LOCAL-00010" summary="club info added">
+      <created>1602452140651</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1602452770200</updated>
+      <updated>1602452140651</updated>
     </task>
-    <task id="LOCAL-00011" summary="Done with LeftNav Design, Added Bootstrap, Icons">
-      <created>1602626057897</created>
+    <task id="LOCAL-00011" summary="club info added (lil fix)">
+      <created>1602498220240</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1602626057897</updated>
+      <updated>1602498220240</updated>
     </task>
-    <task id="LOCAL-00012" summary="Done with LeftNav Design, Added Bootstrap, Icons">
-      <created>1602626241077</created>
+    <task id="LOCAL-00012" summary="club info added (nav names changed)">
+      <created>1602498720994</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1602626241077</updated>
+      <updated>1602498720994</updated>
     </task>
-    <task id="LOCAL-00013" summary="Done with LeftNav Design, Added Bootstrap, Icons">
-      <created>1602626983105</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1602626983105</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Adaptive Menu nav (&lt;1100px devices)">
-      <created>1602677667396</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1602677667396</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -235,10 +194,10 @@
     <MESSAGE value="should hopefully work with heroku&#10;(added proc)&#10;attempt #3&#10;restructured the project for heroku" />
     <MESSAGE value="heroku test #4" />
     <MESSAGE value="heroku test #5" />
-    <MESSAGE value="Timur omg &lt;br/&gt;" />
-    <MESSAGE value="Done with LeftNav Design, Added Bootstrap, Icons" />
-    <MESSAGE value="Adaptive Menu nav (&lt;1100px devices)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaptive Menu nav (&lt;1100px devices)" />
+    <MESSAGE value="club info added" />
+    <MESSAGE value="club info added (lil fix)" />
+    <MESSAGE value="club info added (nav names changed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="club info added (nav names changed)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -246,42 +205,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602601563319">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602601563319" />
-    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1600701631868">
+    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1602498720835">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600701631868" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602679762071">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602679762071" />
-    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1602626140968">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1602626140968" />
-    <state x="556" y="115" key="RollbackChangesDialog" timestamp="1602625938841">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="556" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602625938841" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1602677675855">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600701635204" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602677675855" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602451713444">
+    <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602498720835" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1602764865413">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602451713444" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1602617771186">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602764865413" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1602764865412">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602617771186" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602604997668">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602764865412" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1602764865411">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602604997668" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602764865411" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1602764865412">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602764865412" />
+    <state x="431" y="173" key="MultipleFileMergeDialog" timestamp="1602761427507">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602498724155">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602498724155" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602761416373">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602761416373" />
+    <state x="301" y="37" width="837" height="825" key="find.popup" timestamp="1602762773480">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="301" y="37" width="837" height="825" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602762773480" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1602452210310">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1602452210310" />
   </component>
 </project>
