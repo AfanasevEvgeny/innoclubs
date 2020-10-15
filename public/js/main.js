@@ -22,9 +22,13 @@ firebase.analytics();
 const db_root = firebase.database().ref();
 // db_root.child('clubs').child('sb club').child('description').set('new description');
 
+// todo ...sign-in here...
+
 // User creds
-let USER_NAME = "aladdinych"; // hardcode
-update_my_clubs(); // get all the clubs (cuz no parameters call)
+let USER_NAME = "aladdinych"; // hardcode / that's when we get the user_name
+$("#your_name_holder").html("You are: " + USER_NAME);
+
+update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
 update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
 update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
 update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)

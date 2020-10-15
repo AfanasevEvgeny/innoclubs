@@ -2,7 +2,8 @@ import React from "react";
 import s from './allClubsWrapper.module.css'
 import Club from "./Club/Club";
 
-const AllClubs = (props) => {
+const AllClubs = (props) =>
+{
     let ClubList = props.ClubsData.map(clubInfo => <Club nameOfClub={clubInfo.name}
                                                          briefDescription={clubInfo.brief_description}/>);
     return (
@@ -10,5 +11,5 @@ const AllClubs = (props) => {
             {ClubList}
         </div>
     )
-}
+};
 export default AllClubs

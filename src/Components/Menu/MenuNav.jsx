@@ -18,7 +18,7 @@ const MenuNav = () => {
                             <h3>My clubs</h3>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="/allClubs"><p>As a Member</p></Dropdown.Item>
+                            <Dropdown.Item href="/myClubs"><p>As a Member</p></Dropdown.Item>
                             <Dropdown.Item href="#/action-2"><p>As a Leader</p></Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>

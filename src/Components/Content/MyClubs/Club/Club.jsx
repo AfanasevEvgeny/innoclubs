@@ -3,7 +3,8 @@ import s from './club.module.css'
 import {Card} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 
-const Club = (props) => {
+const Club = (props) =>
+{
     return (
         <div className={s.clubWrapper}>
             <Card style={{width: '15rem'}}>
@@ -14,7 +15,7 @@ const Club = (props) => {
                     <Card.Text>
                         {props.briefDescription}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">My Go somewhere</Button>
                 </Card.Body>
             </Card>
         </div>
