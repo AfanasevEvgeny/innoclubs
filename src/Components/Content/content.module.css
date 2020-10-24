@@ -1,4 +1,5 @@
 .content {
     grid-area: main;
-    background-color: whitesmoke;
+    background-image: url("Innopolis_University.jpg");
+    background-size: cover;
 }

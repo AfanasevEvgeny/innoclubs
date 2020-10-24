@@ -19,25 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="add front for &quot;my clubs tab&quot;&#10;+ ico">
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPageWrapper.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageWrapper.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUSer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUser.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/UserBlock/UserBlock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/UserBlock/userBlockWrapper.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/logoTesseract.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/logo_min_green_bg.png" afterDir="false" />
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="Upload header&#10;make new components for visiting club as a member/user/leader">
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/Innopolis_University.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/innop_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innou-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/iuLogo.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo_48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/logo_48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo_preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/logo_preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/AllClubs/allClubsWrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/allClubsWrapper.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageWrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/content.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/TopNav/topnav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/topnav.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +88,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src\Components\Content" />
       <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src\Components\TopNav" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/src" />
@@ -147,7 +141,7 @@
       <workItem from="1602801718398" duration="37000" />
       <workItem from="1602890838692" duration="2749000" />
       <workItem from="1602948717579" duration="1874000" />
-      <workItem from="1603465076950" duration="10870000" />
+      <workItem from="1603465076950" duration="17523000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -282,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602794873646</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Upload header&#10;make new components for visiting club as a member/user/leader">
+      <created>1603561176968</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603561176968</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +321,8 @@
     <MESSAGE value="added user club list + link with front&#10;added filtered (member-only/leader-only/any/my) club list fetching from database&#10;forgot react-scripts start -&gt; node server.js" />
     <MESSAGE value="add front for &quot;my clubs tab&quot;" />
     <MESSAGE value="add front for &quot;my clubs tab&quot;&#10;+ ico" />
-    <option name="LAST_COMMIT_MESSAGE" value="add front for &quot;my clubs tab&quot;&#10;+ ico" />
+    <MESSAGE value="Upload header&#10;make new components for visiting club as a member/user/leader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload header&#10;make new components for visiting club as a member/user/leader" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -358,10 +360,11 @@
     </state>
     <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1602801735858" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1602890862455">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2346" y="220" key="Vcs.Push.Dialog.v2" timestamp="1603561180205">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602794886201" />
+    <state x="2346" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603561180205" />
     <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602890862455" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602801729031">
       <screen x="0" y="0" width="1440" height="900" />
