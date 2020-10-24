@@ -15,7 +15,7 @@ const Club = (props) => {
                     <Card.Text>
                         {props.briefDescription}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Click</Button>
                 </Card.Body>
             </Card>
         </div>
