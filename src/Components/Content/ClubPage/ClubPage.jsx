@@ -1,11 +1,13 @@
 import React from "react";
 import s from './ClubPageWrapper.module.css'
+import ClubPageMember from "./ForMember/ClubPageMember";
 
-const ClubPage = () => {
-    return (
-        <div className={s.ClubPageWrapper}>
+const ClubPage = (props) => {
+    /* const isUser = props.isMember
+     if (isUser){
+         return <ClubPageMember/>
+     }*/
 
-        </div>
-    );
+    return <ClubPageMember/>
 }
 export default ClubPage

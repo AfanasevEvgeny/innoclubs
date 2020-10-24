@@ -3,7 +3,7 @@ import AllClubs from "./AllClubs/AllClubs";
 import MyClubs from "./MyClubs/MyClubs";
 import s from './content.module.css'
 import Route from "react-router-dom/es/Route";
-
+import ClubPage from "./ClubPage/ClubPage";
 
 const Content = (props) =>
 {
