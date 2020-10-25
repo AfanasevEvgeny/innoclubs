@@ -3,11 +3,24 @@ import s from './ClubPageWrapper.module.css'
 import ClubPageMember from "./ForMember/ClubPageMember";
 
 const ClubPage = (props) => {
-    /* const isUser = props.isMember
-     if (isUser){
-         return <ClubPageMember/>
-     }*/
+    const myClubs = props.clubsForCheck;
+    let isMyClub = false
+    console.log(props.nameOfClub)
 
-    return <ClubPageMember/>
+    for (let i = 0; i < myClubs.length; i++) {
+        if (myClubs[i].name === props.nameOfClub) {
+            isMyClub = true
+            break
+        }
+    }
+
+
+    if (isMyClub) {
+        return (
+            <ClubPageMember/>
+        );
+    } else {
+        return <h1>I am not member of this club</h1>
+    }
 }
 export default ClubPage
