@@ -26,7 +26,7 @@ const db_root = firebase.database().ref();
 
 // User creds
 let USER_NAME = "aladdinych"; // hardcode / that's when we get the user_name
-$("#your_name_holder").html("You are: " + USER_NAME);
+$("#your_name_holder").html("You are: " + USER_NAME + "\n");
 
 update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
 update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
@@ -72,18 +72,20 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
 
                     if (role === "leader" && club.owner === user_name ||
                         role === "member" && club.owner !== user_name ||
-                        !role) // both member and leader - clubs
+                        role === undefined) // both member and leader - clubs
                     {
                         clubs_to_show.push({
                             id: i,
                             name: user_clubs[i],
-                            brief_description: club.brief
+                            brief: club.brief,
+                            description: club.description,
+                            logo_b64: club.logo_b64
                         });
                     }
 
                     if (i === user_clubs.length - 1)
                     {
-                        if (!role)
+                        if (role === undefined)
                         {
                             state.MyClubsData = clubs_to_show;
                         }
@@ -99,7 +101,7 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
                     }
                 });
             }
-            if (!role)
+            if (role === undefined)
             {
                 state.MyClubsData = clubs_to_show;
             }
@@ -131,7 +133,9 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
                 clubs_to_show.push({
                     id: i++,
                     name: club_name,
-                    brief_description: club.brief
+                    brief: club.brief,
+                    description: club.description,
+                    logo_b64: club.logo_b64
                 });
             }
 
