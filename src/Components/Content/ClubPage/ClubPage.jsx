@@ -1,26 +1,34 @@
 import React from "react";
 import s from './ClubPageWrapper.module.css'
 import ClubPageMember from "./ForMember/ClubPageMember";
-
+import ClubPageLeader from "./ForLeader/ClubPageLeader";
 const ClubPage = (props) => {
-    const myClubs = props.clubsForCheck;
-    let isMyClub = false
-    console.log(props.nameOfClub)
+    const myMemberClubs = props.clubsMemberForCheck;
+    let isMyMemberClub = false
 
-    for (let i = 0; i < myClubs.length; i++) {
-        if (myClubs[i].name === props.nameOfClub) {
-            isMyClub = true
+    for (let i = 0; i < myMemberClubs.length; i++) {
+        if (myMemberClubs[i].name === props.nameOfClub) {
+            isMyMemberClub = true
+            break
+        }
+    }
+    const myLeaderClubs = props.clubsLeaderCheck;
+    let isMyLeaderClub = false
+
+    for (let i = 0; i < myLeaderClubs.length; i++) {
+        if (myLeaderClubs[i].name === props.nameOfClub) {
+            isMyLeaderClub = true
             break
         }
     }
 
 
-    if (isMyClub) {
+    if (isMyMemberClub) {
         return (
             <ClubPageMember/>
         );
-    } else {
-        return <h1>I am not member of this club</h1>
+    } else if (isMyLeaderClub) {
+        return <ClubPageLeader/>
     }
 }
 export default ClubPage
