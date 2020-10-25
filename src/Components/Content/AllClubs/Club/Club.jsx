@@ -2,9 +2,10 @@ import React from "react";
 import s from './club.module.css'
 import {Card} from "react-bootstrap";
 import {Button} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
 const Club = (props) => {
-
+    let clubLink = "/" + props.nameOfClub;
     return (
         <div className={s.clubWrapper}>
             <Card style={{width: '15rem'}}>
@@ -15,7 +16,7 @@ const Club = (props) => {
                     <Card.Text>
                         {props.briefDescription}
                     </Card.Text>
-                    <Button variant="primary">Click</Button>
+                    <NavLink to={clubLink}><Button variant="success">Open</Button></NavLink>
                 </Card.Body>
             </Card>
         </div>
