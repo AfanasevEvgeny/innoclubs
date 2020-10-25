@@ -6,15 +6,17 @@ import {NavLink} from "react-router-dom";
 
 const Club = (props) => {
     let clubLink = "/" + props.nameOfClub;
+    let logo = props.logo;
+    console.log(logo)
     return (
         <div className={s.clubWrapper}>
             <Card style={{width: '15rem'}}>
                 <Card.Img variant="top"
-                          src="https://previews.123rf.com/images/zoaarts/zoaarts1811/zoaarts181100002/111833062-vector-illustration-of-cool-classic-skateboarding-logo-in-old-school-style-skateboard-with-ribbon-ba.jpg"/>
+                          src={logo}/>
                 <Card.Body>
                     <Card.Title>{props.nameOfClub}</Card.Title>
                     <Card.Text>
-                        {props.briefDescription}
+                        {props.brief}
                     </Card.Text>
                     <NavLink to={clubLink}><Button variant="success">Open</Button></NavLink>
                 </Card.Body>

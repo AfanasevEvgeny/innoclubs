@@ -12,7 +12,8 @@ const App = (props) => {
             <div className="AppWrapper">
                 <TopNav/>
                 <MenuNav/>
-                <Content ClubsData={props.AppState.ClubsData} MyClubsData={props.AppState.MyClubsData}/>
+                <Content ClubsData={props.AppState.ClubsData} MyMemberClubsData={props.AppState.MyMemberClubsData}
+                         MyLeaderClubsData={props.AppState.MyLeaderClubsData}/>
             </div>
         </BrowserRouter>
     );
