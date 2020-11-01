@@ -1,57 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Public+Sans:wght@300&family=Titillium+Web:wght@600&family=Ubuntu&display=swap');
+
 .topnav {
     grid-area: header;
-    background-color: #80bc00;
+    background: url("innopolis_university_4.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.title {
-    width: 83%;
-    height: 100%;
-    color: whitesmoke;
-    padding-left: 1%;
+.logoInnopolisWrapper {
+    width: 20%;
+    padding: 1%;
+    background-color: whitesmoke;
+    clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+}
+
+
+.title_and_logo_Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+    padding-left: 10%;
+    clip-path: polygon(32% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 60%;
 
 }
 
-.title h1 {
-    text-decoration: underline;
-}
-
-.logo {
-    width: 7%;
-    height: 100%;
-    padding: 5px;
-
-}
-
-.logoImg {
-    width: 100px;
-    height: 100px;
-    background-image: url("logo_48.png");
-    background-size: 100% 100%;
-    image-rendering: pixelated;
-}
-
-.userWrapper {
-    width: 10%;
-    height: 100%;
-    padding: 8px;
-}
-
-@media only screen and (max-width: 1100px) {
-    .logo {
-        width: 0;
-    }
-
-    .logoImg {
-        width: 0;
-    }
-
-    .title {
-        width: 50%;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .title_and_logo_Wrapper {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(52, 143, 65, 0.1);
     }
 
     .userWrapper {
-        width: 40%;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(52, 143, 65, 0.1);
     }
+
+    .warning {
+        display: none;
+    }
+
+    .logoInnopolisWrapper {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+
+}
+
+.title_ic {
+    color: white;
+    font-size: 8vw;
+    display: inline;
+
+
+}
+
+.bracket {
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 3vw;
+    display: inline;
+    color: #d4ff6e;
+    padding-left: 1vw;
+    font-weight: lighter;
+    padding-right: 1vw;
+    text-decoration: overline;
+
+
+}
+
+.userWrapper {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-left: 1px solid whitesmoke;
 }

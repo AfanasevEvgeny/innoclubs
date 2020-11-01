@@ -3,6 +3,6 @@ window.state = {
     MyClubsData: [],
     MyMemberClubsData: [],
     MyLeaderClubsData: [],
-    isMember: false
 };
+
 export default window.state;

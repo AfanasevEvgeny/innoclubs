@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Elektra';
+  src: url('Elektra.otf');
+}
+
+$bg-color: white;
+$dot-color: #348f41;
+
+// Dimensions
+$dot-size: 1.26px;
+$dot-space: 22px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Elektra, sans-serif;
+}
+
+.AppWrapper {
+  background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+  linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+  $dot-color;
+  background-size: $dot-space $dot-space;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu main";
+  grid-template-rows: 3fr 9fr;
+  grid-template-columns: 13% 87%;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1100px) {
+    .AppWrapper {
+        display: grid;
+        grid-template-areas:
+    "header header"
+    "menu menu"
+    "main main";
+        grid-template-rows: 1fr 2fr 10fr;
+
+        min-height: 100vh;
+    }
+}

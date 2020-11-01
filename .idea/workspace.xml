@@ -26,19 +26,35 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="Bg image for Content.jsx&#10;Add some function for ClubPage reflection">
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/MyLeaderClubs/MyleaderClubs.jsx" afterDir="false" />
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="-Completely done with functional for reflecting club Page&#10;-some fixes in Reflecting MemberClubsList&#10;-adding LeaderClubsList&#10;-uploading logos for clubs from DB&#10;-new background for Content.jsx (scss)&#10;-adaptation of Header for mobile devices">
+      <change afterPath="$PROJECT_DIR$/public/Elektra_Light_Pro_Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Login/login.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innobg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innobg1_blur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innopolis_university_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innopolis_university_4_blur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innopolis_university_4_blur1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TopNav/innopolis_university_4_blur2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Elektra.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/AllClubs/AllClubs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/AllClubs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWrapper.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWrapper.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/MyClubs/MyClubs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/MyClubs/MyClubs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/content.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/content.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/TopNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/UserBlock/UserBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/UserBlock/UserBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/UserBlock/userBlockWrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/UserBlock/userBlockWrapper.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/bg2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/iuLogo.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/logo_min_green_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopNav/logo_preview.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/TopNav/topnav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopNav/topnav.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,22 +103,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Content" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Content" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src\Components\Login" />
+      <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src" />
       <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src\Components\TopNav" />
       <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src\Components\Content" />
       <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Components/Content" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,6 +165,8 @@
       <workItem from="1602890838692" duration="2749000" />
       <workItem from="1602948717579" duration="1874000" />
       <workItem from="1603465076950" duration="34357000" />
+      <workItem from="1604049493623" duration="14488000" />
+      <workItem from="1604266043226" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -297,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603574367100</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="-Completely done with functional for reflecting club Page&#10;-some fixes in Reflecting MemberClubsList&#10;-adding LeaderClubsList&#10;-uploading logos for clubs from DB&#10;-new background for Content.jsx (scss)&#10;-adaptation of Header for mobile devices">
+      <created>1603649049533</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603649049534</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +333,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/addInterface_test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -337,19 +374,24 @@
     <MESSAGE value="add front for &quot;my clubs tab&quot;&#10;+ ico" />
     <MESSAGE value="Upload header&#10;make new components for visiting club as a member/user/leader" />
     <MESSAGE value="Bg image for Content.jsx&#10;Add some function for ClubPage reflection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bg image for Content.jsx&#10;Add some function for ClubPage reflection" />
+    <MESSAGE value="-Completely done with functional for reflecting club Page&#10;-some fixes in Reflecting MemberClubsList&#10;-adding LeaderClubsList&#10;-uploading logos for clubs from DB&#10;-new background for Content.jsx (scss)&#10;-adaptation of Header for mobile devices" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Completely done with functional for reflecting club Page&#10;-some fixes in Reflecting MemberClubsList&#10;-adding LeaderClubsList&#10;-uploading logos for clubs from DB&#10;-new background for Content.jsx (scss)&#10;-adaptation of Header for mobile devices" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2511" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603531360436">
+    <state x="2511" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603832869910">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
-    <state x="2511" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603531360436" />
+    <state x="2511" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603832869910" />
     <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1602801746183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="33" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602801746183" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1603835084870">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603835084870" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1603630831055">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -379,11 +421,11 @@
     </state>
     <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1602801735858" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="2346" y="220" key="Vcs.Push.Dialog.v2" timestamp="1603574582376">
+    <state x="2346" y="220" key="Vcs.Push.Dialog.v2" timestamp="1603649111828">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602794886201" />
-    <state x="2346" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603574582376" />
+    <state x="2346" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603649111828" />
     <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602890862455" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602801729031">
       <screen x="0" y="0" width="1440" height="900" />
@@ -397,9 +439,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="301" y="37" width="837" height="825" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602762773480" />
-    <state x="385" y="210" key="run.anything.popup" timestamp="1602452210310">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="2433" y="222" key="run.anything.popup" timestamp="1603745356947">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2433" y="222" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603745356947" />
     <state x="385" y="210" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1602452210310" />
     <state x="2188" y="195" width="894" height="782" key="search.everywhere.popup" timestamp="1603626039695">
       <screen x="1920" y="0" width="1920" height="1040" />

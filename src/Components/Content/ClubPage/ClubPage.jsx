@@ -25,7 +25,8 @@ const ClubPage = (props) => {
 
     if (isMyMemberClub) {
         return (
-            <ClubPageMember/>
+            <ClubPageMember nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
+                            brief={props.brief}/>
         );
     } else if (isMyLeaderClub) {
         return <ClubPageLeader/>
