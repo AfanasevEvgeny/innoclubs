@@ -145,3 +145,41 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
         });
     }
 }
+
+async function get_events(club_name, return_type, cb)
+{
+    await db_root.child('events').child(club_name).on('value', clubs_snap =>
+    {
+        let all_events = clubs_snap.val();
+        console.log('all events:', all_events);
+
+        let res = [];
+        if (return_type !== 0)
+        {
+            for (let e_id in all_events)
+            {
+                let e = all_events[e_id];
+                if (e.type === 1 && return_type === 1)
+                {
+                    res.push(e);
+                }
+                else if (e.type === 2 && return_type === 2)
+                {
+                    res.push(e);
+                }
+            }
+        }
+        else
+        {
+            res = all_events;
+        }
+
+        cb(res);
+    });
+    return true;
+}
+
+get_events("sb_club", 1, (e_list) =>
+{
+    console.log('HELLO FROM GET EVENTS', e_list);
+});
