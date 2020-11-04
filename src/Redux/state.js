@@ -1,3 +1,4 @@
+
 window.state = {
     ClubsData: [],
     MyClubsData: [],

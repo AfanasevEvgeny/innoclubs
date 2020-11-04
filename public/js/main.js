@@ -46,6 +46,7 @@ update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
  * if role = leader => returns all the clubs for this user, where this user has leader permissions
  * if role = undef => returns all the clubs for this user, regardless of their role in these clubs
  */
+
 function update_my_clubs(user_name, role) // role -> perm_mask in the future
 {
     if (user_name)
@@ -145,6 +146,7 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
         });
     }
 }
+
 
 async function get_events(club_name, return_type, cb)
 {
