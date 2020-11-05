@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="update header.&#10;set up initial prototype of club page">
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,10 +31,12 @@
   </component>
   <component name="ProjectId" id="1howwyZuBPoJUrfY22rfRRUg7QT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -78,14 +52,13 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Content" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Evgeny\WebstormProjects\innoclubs\src" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Components/Content" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (2)">
@@ -159,7 +132,8 @@
       <workItem from="1603633260498" duration="857000" />
       <workItem from="1603636443069" duration="3611000" />
       <workItem from="1603739047553" duration="21000" />
-      <workItem from="1604342367022" duration="2569000" />
+      <workItem from="1604342367022" duration="2660000" />
+      <workItem from="1604612166763" duration="1003000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -308,14 +282,18 @@
       <option name="project" value="LOCAL" />
       <updated>1603643952214</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="+ events database handler&#10;async queries">
+      <created>1604345663166</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1604345663167</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -339,7 +317,8 @@
     <MESSAGE value="add front for &quot;my clubs tab&quot;&#10;+ ico" />
     <MESSAGE value="zhenya forgot node server.js" />
     <MESSAGE value="new club data structure&#10;images are now loading from the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="new club data structure&#10;images are now loading from the database" />
+    <MESSAGE value="+ events database handler&#10;async queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ events database handler&#10;async queries" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -347,59 +326,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
-    <state x="338" y="4" key="CommitChangelistDialog2" timestamp="1603643951894">
+    <state x="388" y="59" key="CommitChangelistDialog2" timestamp="1604345662701">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="338" y="4" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1603643951894" />
-    <state x="147" y="65" key="DiffContextDialog" timestamp="1604498321068">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604498321068" />
-    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1604344575179">
+    <state x="388" y="59" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604345662701" />
+    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1604612331146">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604344575179" />
-    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1604344575178">
+    <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604612331146" />
+    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1604612331145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604344575178" />
-    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1604344575177">
+    <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604612331145" />
+    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1604612331144">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604344575177" />
-    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1604344575178">
+    <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604612331144" />
+    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1604612331145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604344575178" />
+    <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604612331145" />
     <state x="144" y="60" key="MergeDialog" timestamp="1604344495971">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="60" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604344495971" />
-    <state x="431" y="154" key="MultipleFileMergeDialog" timestamp="1604344495999">
+    <state x="431" y="154" key="MultipleFileMergeDialog" timestamp="1604612182847">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604344495999" />
+    <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604612182847" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="559" y="115" key="RollbackChangesDialog" timestamp="1604498325979">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="559" y="115" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604498325979" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1603643958708">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604345666002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603643958708" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604344478817">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604345666002" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604612176749">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604344478817" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604612176749" />
     <state x="301" y="37" width="837" height="825" key="find.popup" timestamp="1602762773480">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="301" y="37" width="837" height="825" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602762773480" />
-    <state x="411" y="176" key="run.anything.popup" timestamp="1604498297061">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1602452210310">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="411" y="176" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604498297061" />
     <state x="385" y="210" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1602452210310" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602769293315">
       <screen x="0" y="0" width="1440" height="900" />
