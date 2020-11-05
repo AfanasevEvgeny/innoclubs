@@ -4,6 +4,7 @@ window.state = {
     MyClubsData: [],
     MyMemberClubsData: [],
     MyLeaderClubsData: [],
+    get_events: undefined
 };
 
 export default window.state;

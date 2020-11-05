@@ -148,7 +148,7 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
 }
 
 
-async function get_events(club_name, return_type, cb)
+let get_events = async function (club_name, return_type, cb)
 {
     await db_root.child('events').child(club_name).on('value', clubs_snap =>
     {
@@ -179,9 +179,15 @@ async function get_events(club_name, return_type, cb)
         cb(res);
     });
     return true;
-}
+};
 
-get_events("sb_club", 1, (e_list) =>
+window.onload = function ()
 {
-    console.log('HELLO FROM GET EVENTS', e_list);
-});
+
+    state.get_events = get_events;
+
+    state.get_events("sb_club", 1, (e_list) =>
+    {
+        console.log('HELLO FROM GET EVENTS', {e_list});
+    });
+}
