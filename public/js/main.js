@@ -190,4 +190,4 @@ window.onload = function ()
     {
         console.log('HELLO FROM GET EVENTS', {e_list});
     });
-}
+};
