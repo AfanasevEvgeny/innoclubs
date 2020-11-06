@@ -4,7 +4,7 @@
     <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,8 @@
       <workItem from="1603636443069" duration="3611000" />
       <workItem from="1603739047553" duration="21000" />
       <workItem from="1604342367022" duration="2660000" />
-      <workItem from="1604612166763" duration="1003000" />
+      <workItem from="1604612166763" duration="1404000" />
+      <workItem from="1604614397698" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -289,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604345663167</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="get events function is not incorporated into window.state and ready to be picked up on react">
+      <created>1604613254477</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1604613254477</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +326,8 @@
     <MESSAGE value="zhenya forgot node server.js" />
     <MESSAGE value="new club data structure&#10;images are now loading from the database" />
     <MESSAGE value="+ events database handler&#10;async queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ events database handler&#10;async queries" />
+    <MESSAGE value="get events function is not incorporated into window.state and ready to be picked up on react" />
+    <option name="LAST_COMMIT_MESSAGE" value="get events function is not incorporated into window.state and ready to be picked up on react" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -326,26 +335,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600699909117" />
-    <state x="388" y="59" key="CommitChangelistDialog2" timestamp="1604345662701">
+    <state x="223" y="61" key="CommitChangelistDialog2" timestamp="1604613254275">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="388" y="59" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604345662701" />
-    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1604612331146">
+    <state x="223" y="61" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604613254275" />
+    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1604613717661">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604612331146" />
-    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1604612331145">
+    <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604613717661" />
+    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1604613717660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604612331145" />
-    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1604612331144">
+    <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604613717660" />
+    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1604613717660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604612331144" />
-    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1604612331145">
+    <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604613717660" />
+    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1604613717661">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604612331145" />
+    <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604613717661" />
     <state x="144" y="60" key="MergeDialog" timestamp="1604344495971">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -355,10 +364,10 @@
     </state>
     <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604612182847" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604345666002">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604613262886">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604345666002" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604613262886" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604612176749">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
