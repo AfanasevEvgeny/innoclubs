@@ -11,14 +11,16 @@
     height: max-content;
     width: max-content;
     padding: 4%;
-    background-color: #0b2e13;
+
 
 }
 
 .clubWrapper {
     height: max-content;
     width: max-content;
-    background-color: royalblue;
+    background-color: whitesmoke;
+    margin: 5px;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -32,6 +34,10 @@
     padding: 4%;
     height: max-content;
     width: max-content;
-    background-color: red;
+    background-color: whitesmoke;
 
+}
+
+.logo {
+    margin-bottom: 5px;
 }

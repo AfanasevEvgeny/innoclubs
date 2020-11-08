@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +65,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -50,6 +78,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Content" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,6 +129,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -135,6 +165,7 @@
       <workItem from="1604342367022" duration="2660000" />
       <workItem from="1604612166763" duration="1404000" />
       <workItem from="1604614397698" duration="659000" />
+      <workItem from="1604844124068" duration="3802000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -301,7 +332,10 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -364,6 +398,10 @@
     </state>
     <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604612182847" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
+    <state x="2664" y="240" key="RollbackChangesDialog" timestamp="1604685721777">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2664" y="240" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604685721777" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604613262886">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
