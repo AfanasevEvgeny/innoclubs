@@ -29,7 +29,8 @@ const ClubPage = (props) => {
                             brief={props.brief}/>
         );
     } else if (isMyLeaderClub) {
-        return <ClubPageLeader/>
+        return <ClubPageLeader nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
+                               brief={props.brief}/>
     }
 }
 export default ClubPage
