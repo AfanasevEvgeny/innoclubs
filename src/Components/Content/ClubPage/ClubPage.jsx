@@ -2,6 +2,7 @@ import React from "react";
 import s from './ClubPageWrapper.module.css'
 import ClubPageMember from "./ForMember/ClubPageMember";
 import ClubPageLeader from "./ForLeader/ClubPageLeader";
+import ClubPageUser from "./ForUser/ClubPageUSer";
 const ClubPage = (props) => {
     const myMemberClubs = props.clubsMemberForCheck;
     let isMyMemberClub = false
@@ -31,6 +32,9 @@ const ClubPage = (props) => {
     } else if (isMyLeaderClub) {
         return <ClubPageLeader nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
                                brief={props.brief}/>
+    } else {
+        return <ClubPageUser nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
+                             brief={props.brief}/>
     }
 }
 export default ClubPage
