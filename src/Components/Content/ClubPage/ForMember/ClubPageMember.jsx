@@ -9,7 +9,6 @@ const ClubPageMember = (props) => {
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
-    let eventsListToShow;
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>
