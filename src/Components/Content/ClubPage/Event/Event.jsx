@@ -6,6 +6,7 @@ const Event = (props) => {
     const [modalIsOpen, setModalIsOpen] = useState(false)
     var list;
     var f;
+
     return (
         <div>
             <ListGroup.Item>
@@ -17,6 +18,8 @@ const Event = (props) => {
                         f = list[0].date_begin;
                         console.log(f)
                     });
+
+
                 }}>Available</Button>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
                     <h1>Here will be information about event, attendance tracking interface</h1>

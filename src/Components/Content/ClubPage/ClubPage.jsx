@@ -6,7 +6,6 @@ import ClubPageUser from "./ForUser/ClubPageUSer";
 const ClubPage = (props) => {
     const myMemberClubs = props.clubsMemberForCheck;
     let isMyMemberClub = false
-
     for (let i = 0; i < myMemberClubs.length; i++) {
         if (myMemberClubs[i].name === props.nameOfClub) {
             isMyMemberClub = true
@@ -31,7 +30,9 @@ const ClubPage = (props) => {
         );
     } else if (isMyLeaderClub) {
         return <ClubPageLeader nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
-                               brief={props.brief}/>
+                               brief={props.brief}
+                               events={props.events}
+        />
     } else {
         return <ClubPageUser nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
                              brief={props.brief}/>

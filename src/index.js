@@ -159,6 +159,7 @@ let get_events = async function (club_name, return_type, cb) {
 
 
         cb(res);
+        store.showEvents();
 
     });
     return true;
@@ -183,12 +184,8 @@ let rerenderEntireTree = () => {
 window.try_render = setInterval(function () {
     if (window.can_render) {
         console.log('YES I CAN RENDER NOW FINALLY!!!!!!!!');
-        ReactDOM.render(
-            <React.StrictMode>
-                <App AppState={store.state}/>
-            </React.StrictMode>,
-            document.getElementById('root')
-        );
+        rerenderEntireTree(store.state)
+        store.subscribe(rerenderEntireTree);
         clearInterval(window.try_render);
         window.try_render = undefined;
     }
