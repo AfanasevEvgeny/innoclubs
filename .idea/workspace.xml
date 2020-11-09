@@ -26,12 +26,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="club page for member and leader is done &#10;events are hardcoded &#10;buttons are hardcoded">
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="backup index.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUSer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUSer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUser.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUser.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForLeader/ClubPageLeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +82,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Components/Content" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Content" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (2)">
@@ -164,7 +167,7 @@
       <workItem from="1604612166763" duration="1404000" />
       <workItem from="1604614397698" duration="659000" />
       <workItem from="1604844124068" duration="4434000" />
-      <workItem from="1604863193212" duration="345000" />
+      <workItem from="1604863193212" duration="2862000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -334,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604853276412</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="club page for user view created">
+      <created>1604863561295</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1604863561295</updated>
+    </task>
+    <task id="LOCAL-00026" summary="backup index.js">
+      <created>1604959642737</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1604959642737</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +406,9 @@
     <MESSAGE value="+ events database handler&#10;async queries" />
     <MESSAGE value="get events function is not incorporated into window.state and ready to be picked up on react" />
     <MESSAGE value="club page for member and leader is done &#10;events are hardcoded &#10;buttons are hardcoded" />
-    <option name="LAST_COMMIT_MESSAGE" value="club page for member and leader is done &#10;events are hardcoded &#10;buttons are hardcoded" />
+    <MESSAGE value="club page for user view created" />
+    <MESSAGE value="backup index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup index.js" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -401,22 +420,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="223" y="61" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604613254275" />
-    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1604613717661">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1515" height="2" key="GridCell.Tab.0.bottom" timestamp="1604960400265">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604613717661" />
-    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1604613717660">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635780" />
+    <state width="1515" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604960400265" />
+    <state width="1515" height="2" key="GridCell.Tab.0.center" timestamp="1604960400265">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604613717660" />
-    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1604613717660">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635779" />
+    <state width="1515" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604960400265" />
+    <state width="1515" height="2" key="GridCell.Tab.0.left" timestamp="1604960400265">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604613717660" />
-    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1604613717661">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635779" />
+    <state width="1515" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604960400265" />
+    <state width="1515" height="2" key="GridCell.Tab.0.right" timestamp="1604960400265">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604613717661" />
+    <state width="1899" height="157" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635780" />
+    <state width="1515" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604960400265" />
     <state x="144" y="60" key="MergeDialog" timestamp="1604344495971">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -426,23 +453,32 @@
     </state>
     <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604612182847" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="2664" y="240" key="RollbackChangesDialog" timestamp="1604685721777">
+    <state x="2664" y="240" key="RollbackChangesDialog" timestamp="1604956187008">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2664" y="240" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604685721777" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604853293326">
+    <state x="2664" y="240" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956187008" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604863564753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604613262886" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604853293326" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604863564753" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604956716892">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956716892" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604956631065">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956631065" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604612176749">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604612176749" />
-    <state x="301" y="37" width="837" height="825" key="find.popup" timestamp="1602762773480">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2321" y="43" width="1116" height="954" key="find.popup" timestamp="1604957464571">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="301" y="37" width="837" height="825" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602762773480" />
+    <state x="2321" y="43" width="1116" height="954" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604957464571" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1602452210310">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

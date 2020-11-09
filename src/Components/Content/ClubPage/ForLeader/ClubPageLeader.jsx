@@ -5,6 +5,7 @@ import {Popover} from "bootstrap";
 import Event from "../Event/Event";
 
 const ClubPageLeader = (props) => {
+    let events = props.events;
     let clubLink = "/" + props.nameOfClub;
     let logo = props.logo;
     let nameOfClub = props.nameOfClub;
@@ -17,8 +18,7 @@ const ClubPageLeader = (props) => {
                 <Card style={{width: '18rem'}}>
                     <Card.Header>Events <Button variant="info">Edit</Button></Card.Header>
                     <ListGroup variant="flush">
-                        <Event/>
-                        <Event/>
+
                     </ListGroup>
                 </Card>
             </div>
