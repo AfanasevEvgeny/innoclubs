@@ -26,10 +26,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="club page for user view created">
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="backup main.js">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/innoclubs2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/innoclubs2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/Event/Event.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +84,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Components/Content" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Content" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (2)">
@@ -407,22 +414,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="223" y="61" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604613254275" />
-    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1604613717661">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.bottom" timestamp="1604958635780">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604613717661" />
-    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1604613717660">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635780" />
+    <state width="1899" height="157" key="GridCell.Tab.0.center" timestamp="1604958635779">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604613717660" />
-    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1604613717660">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635779" />
+    <state width="1899" height="157" key="GridCell.Tab.0.left" timestamp="1604958635779">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604613717660" />
-    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1604613717661">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="157" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635779" />
+    <state width="1899" height="157" key="GridCell.Tab.0.right" timestamp="1604958635780">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604613717661" />
+    <state width="1899" height="157" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604958635780" />
     <state x="144" y="60" key="MergeDialog" timestamp="1604344495971">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -432,23 +443,32 @@
     </state>
     <state x="431" y="154" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604612182847" />
     <state x="431" y="173" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1602761427507" />
-    <state x="2664" y="240" key="RollbackChangesDialog" timestamp="1604951664550">
+    <state x="2664" y="240" key="RollbackChangesDialog" timestamp="1604956187008">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2664" y="240" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604951664550" />
+    <state x="2664" y="240" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956187008" />
     <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604863564753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604613262886" />
     <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604863564753" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604956716892">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956716892" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604956631065">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956631065" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604612176749">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604612176749" />
-    <state x="301" y="37" width="837" height="825" key="find.popup" timestamp="1602762773480">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2321" y="43" width="1116" height="954" key="find.popup" timestamp="1604957464571">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="301" y="37" width="837" height="825" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602762773480" />
+    <state x="2321" y="43" width="1116" height="954" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604957464571" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1602452210310">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
