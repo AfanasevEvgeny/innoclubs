@@ -9,6 +9,7 @@
     "bootstrap": "^4.5.3",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
+    "firebase": "^8.0.1",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "npm-watch": "^0.7.0",
@@ -31,8 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",                                                                                                   
-    "test": "react-scripts test",                                          
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "nodemon index.js"
   },
@@ -40,7 +41,7 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [                                                                                                                 
+    "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"

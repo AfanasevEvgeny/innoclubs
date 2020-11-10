@@ -12,15 +12,16 @@ const ClubPageMember = (props) => {
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>
-                <Card style={{}}>
-                    <Card.Header>Featured</Card.Header>
+                <Card style={{width: '18rem'}}>
+                    <Card.Header>Events</Card.Header>
                     <ListGroup variant="flush">
+                        <Event/>
                         <Event/>
                     </ListGroup>
                 </Card>
             </div>
             <div className={s.clubWrapper}>
-                <img src={logo} height="200px" width="200px"/>
+                <img src={logo} height="200px" width="200px" className={s.logo}/>
                 <ListGroup style={{width: '25rem'}}>
                     <ListGroupItem><Card className="text-center">
                         <Card.Header>{brief}</Card.Header>
@@ -38,7 +39,9 @@ const ClubPageMember = (props) => {
                 </ListGroup>
             </div>
             <div className={s.optionsWrapper}>
-                <h1>options</h1>
+                <h1>Contnacts</h1>
+                <p>Telegram chat: undefined</p>
+                <p>Leader alias: undefined</p>
             </div>
         </div>
     );

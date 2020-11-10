@@ -1,0 +1,43 @@
+.ClubPageMemberWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    height: 100%;
+}
+
+.eventsWrapper {
+    height: max-content;
+    width: max-content;
+    padding: 4%;
+
+
+}
+
+.clubWrapper {
+    height: max-content;
+    width: max-content;
+    background-color: whitesmoke;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+
+}
+
+.optionsWrapper {
+    padding: 4%;
+    height: max-content;
+    width: max-content;
+    background-color: whitesmoke;
+
+}
+
+.logo {
+    margin-bottom: 5px;
+}

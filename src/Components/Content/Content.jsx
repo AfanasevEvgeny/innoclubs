@@ -16,6 +16,7 @@ const Content = (props) => {
                                                                                       description={clubInfo.description}
                                                                                       logo={clubInfo.logo_b64}
                                                                                       brief={clubInfo.brief}
+                                                                                      events={clubInfo.events}
 
 
                                                               />}/>);

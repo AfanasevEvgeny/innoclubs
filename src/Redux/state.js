@@ -1,10 +1,21 @@
+let store = {
+    state: {
+        ClubsData: [],
+        MyClubsData: [],
+        MyMemberClubsData: [],
+        MyLeaderClubsData: [],
+        get_events: undefined
+    },
+    _callSubscriber() {
 
-window.state = {
-    ClubsData: [],
-    MyClubsData: [],
-    MyMemberClubsData: [],
-    MyLeaderClubsData: [],
-    get_events: undefined
-};
+    },
+    subscribe(observer) {
+        this._callSubscriber = observer;
+    },
+    showEvents() {
+        this._callSubscriber(this.state)
+    }
 
-export default window.state;
+}
+
+export default store;
