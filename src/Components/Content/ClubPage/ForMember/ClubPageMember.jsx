@@ -9,6 +9,7 @@ const ClubPageMember = (props) => {
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
+
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>
@@ -16,7 +17,7 @@ const ClubPageMember = (props) => {
                     <Card.Header>Events</Card.Header>
                     <ListGroup variant="flush">
                         <Event/>
-                        <Event/>
+                        <Event/>зфы
                     </ListGroup>
                 </Card>
             </div>
