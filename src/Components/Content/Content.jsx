@@ -20,7 +20,7 @@ const Content = (props) => {
 
 
                                                               />}/>);
-
+    console.log(ClubPageList)
     return (
         <div className={s.content}>
             <Route path='/allClubs' render={() => <AllClubs ClubsData={props.ClubsData}/>}/>
