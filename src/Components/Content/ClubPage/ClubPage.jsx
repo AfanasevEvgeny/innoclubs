@@ -21,7 +21,7 @@ const ClubPage = (props) => {
             break
         }
     }
-
+ 
 
     if (isMyMemberClub) {
         return (
