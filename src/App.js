@@ -15,6 +15,8 @@ const App = (props) => {
                 <MenuNav/>
                 <Content ClubsData={props.AppState.ClubsData} MyMemberClubsData={props.AppState.MyMemberClubsData}
                          MyLeaderClubsData={props.AppState.MyLeaderClubsData}
+                         dispatch={props.dispatch}
+
                 />
             </div>
         </BrowserRouter>

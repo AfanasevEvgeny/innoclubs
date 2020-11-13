@@ -5,7 +5,9 @@ import {Popover} from "bootstrap";
 import Event from "../Event/Event";
 import store from "../../../../Redux/state"
 import {leave_club} from "../../../../index"
-const ClubPageMember = (props) => {
+
+const ClubPageMember = (props) =>
+{
     let clubLink = "/" + props.nameOfClub;
     let logo = props.logo;
     let nameOfClub = props.nameOfClub;
@@ -14,15 +16,20 @@ const ClubPageMember = (props) => {
     let events = props.events;
     let eventList;
     if (events === null)
-        eventList = events.map(event=><Event brief = {event.brief}/>)
-    else {
-        eventList = [] }
-        
-    let LeaveClub = () => {
+    {
+        eventList = events.map(event => <Event brief={event.brief}/>)
+    }
+    else
+    {
+        eventList = []
+    }
+
+    let LeaveClub = () =>
+    {
         leave_club(nameOfClub)
         store._callSubscriber(store.state)
         console.log(store);
-    }   
+    }
     console.log(events)
     return (
         <div className={s.ClubPageMemberWrapper}>

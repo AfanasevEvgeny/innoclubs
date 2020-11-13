@@ -4,29 +4,33 @@ import ClubPageMember from "./ForMember/ClubPageMember";
 import ClubPageLeader from "./ForLeader/ClubPageLeader";
 import ClubPageUser from "./ForUser/ClubPageUSer";
 const ClubPage = (props) => {
+    console.log(props.events)
     const myMemberClubs = props.clubsMemberForCheck;
-    let isMyMemberClub = false;
+    let isMyMemberClub = false
     for (let i = 0; i < myMemberClubs.length; i++) {
         if (myMemberClubs[i].name === props.nameOfClub) {
-            isMyMemberClub = true;
-            break;
+            isMyMemberClub = true
+            break
         }
     }
     const myLeaderClubs = props.clubsLeaderCheck;
-    let isMyLeaderClub = false;
+    let isMyLeaderClub = false
 
     for (let i = 0; i < myLeaderClubs.length; i++) {
         if (myLeaderClubs[i].name === props.nameOfClub) {
-            isMyLeaderClub = true;
-            break;
+            isMyLeaderClub = true
+            break
         }
     }
- 
 
-    if (isMyMemberClub) {
+    if (isMyMemberClub)
+    {
         return (
             <ClubPageMember nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
-                            brief={props.brief}/>
+                            brief={props.brief}
+                            events={props.brief}
+                            dispatch={props.dispatch}
+            />
         );
     } else if (isMyLeaderClub) {
         return <ClubPageLeader nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
@@ -35,7 +39,10 @@ const ClubPage = (props) => {
         />
     } else {
         return <ClubPageUser nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
-                             brief={props.brief}/>
+                             brief={props.brief}
+                             events={props.events}
+                             dispatch={props.dispatch}
+        />
     }
 }
 export default ClubPage
