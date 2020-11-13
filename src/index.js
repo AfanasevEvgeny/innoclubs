@@ -168,6 +168,8 @@ export function enter_club(club_name)
         if (user_clubs.indexOf(club_name) === -1)
         {
             user_clubs.push(club_name);
+            let temp = new Set(user_clubs);
+            user_clubs = Array.from(temp);
             db_root
                 .child('users')
                 .child(USER_NAME)
