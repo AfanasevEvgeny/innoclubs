@@ -5,13 +5,13 @@ import {Popover} from "bootstrap";
 import Event from "../Event/Event";
 
 const ClubPageLeader = (props) => {
+    let events = props.events;
     let clubLink = "/" + props.nameOfClub;
     let logo = props.logo;
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
-    let events = props.events;
-    console.log(events)
+    let eventsListToShow;
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>

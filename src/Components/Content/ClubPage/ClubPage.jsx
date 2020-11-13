@@ -5,23 +5,23 @@ import ClubPageLeader from "./ForLeader/ClubPageLeader";
 import ClubPageUser from "./ForUser/ClubPageUSer";
 const ClubPage = (props) => {
     const myMemberClubs = props.clubsMemberForCheck;
-    let isMyMemberClub = false
+    let isMyMemberClub = false;
     for (let i = 0; i < myMemberClubs.length; i++) {
         if (myMemberClubs[i].name === props.nameOfClub) {
-            isMyMemberClub = true
-            break
+            isMyMemberClub = true;
+            break;
         }
     }
     const myLeaderClubs = props.clubsLeaderCheck;
-    let isMyLeaderClub = false
+    let isMyLeaderClub = false;
 
     for (let i = 0; i < myLeaderClubs.length; i++) {
         if (myLeaderClubs[i].name === props.nameOfClub) {
-            isMyLeaderClub = true
-            break
+            isMyLeaderClub = true;
+            break;
         }
     }
-
+ 
 
     if (isMyMemberClub) {
         return (
