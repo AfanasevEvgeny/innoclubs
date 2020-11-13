@@ -273,9 +273,7 @@ let get_events = async function (club_name, return_type, cb)
 };
 
 window.onload = function () {
-
     store.state.get_events = get_events;
-
     store.state.get_events("sb_club", 1, (e_list) => {
         console.log('HELLO FROM GET EVENTS', {e_list});
     });
