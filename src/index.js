@@ -58,23 +58,27 @@ update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
 
 function update_my_clubs(user_name, role) // role -> perm_mask in the future
 {
-    if (user_name) {
+    if (user_name !== undefined)
+    {
         let user_clubs;
         // Request user's clubs
-        db_root.child('users').child(user_name).child('clubs').on('value', function (uclubs_snap) {
-            // Getting the list of all user's clubs from DB & parsing it into JS object
-            user_clubs = uclubs_snap.val();
-            user_clubs = user_clubs.split(', ');
-            console.log('user clubs', user_clubs);
-
+        let fetch = _ =>
+        {
             // Traverse every of the user's clubs and request info from DB for each of them. Then show it to the user
             let clubs_to_show = []; // temp array of clubs that we'll show to the user
-            for (let i = 0; i < user_clubs.length; i++) {
+            for (let i = 0; i < user_clubs.length; i++)
+            {
                 // request to DB
-                db_root.child('clubs').child(user_clubs[i]).on('value', function (club_info_snap) {
+                db_root.child('clubs').child(user_clubs[i]).on('value', function (club_info_snap)
+                {
                     // requested data for the i-th club
                     let club = club_info_snap.val();
-                    console.log('info retrieved from db:', club);
+                    // console.log('info retrieved from db:', club);
+
+                    if (club === null)
+                    {
+                        return;
+                    }
 
                     if (role === "leader" && club.owner === user_name ||
                         role === "member" && club.owner !== user_name ||
@@ -85,7 +89,9 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
                             name: user_clubs[i],
                             brief: club.brief,
                             description: club.description,
-                            logo_b64: club.logo_b64
+                            logo_b64: club.logo_b64,
+                            events: club.events,
+                            member_list: club.member_list,
                         });
                     }
 
@@ -101,21 +107,33 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
                     }
                 });
             }
-            if (role === undefined) {
+            if (role === undefined)
+            {
                 store.state.MyClubsData = clubs_to_show;
-            } else if (role === "member") {
+            }
+            else if (role === "member")
+            {
                 store.state.MyMemberClubsData = clubs_to_show;
-            } else if (role === "leader") {
+            }
+            else if (role === "leader")
+            {
                 store.state.MyLeaderClubsData = clubs_to_show;
             }
             window.can_render = true;
+        };
+        db_root.child('users').child(user_name).child('clubs').on('value', function (uclubs_snap)
+        {
+            // Getting the list of all user's clubs from DB & parsing it into JS object
+            user_clubs = uclubs_snap.val();
+            user_clubs = user_clubs.split(',');
+            fetch();
         });
     } else {
         let all_clubs;
         // Request all the clubs
         db_root.child('clubs').on('value', function (clubs_snap) {
             all_clubs = clubs_snap.val();
-            console.log('all clubs:', all_clubs);
+            // console.log('all clubs:', all_clubs);
 
             let clubs_to_show = [];
             let i = 0;
@@ -126,7 +144,9 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
                     name: club_name,
                     brief: club.brief,
                     description: club.description,
-                    logo_b64: club.logo_b64
+                    logo_b64: club.logo_b64,
+                    events: club.events,
+                    member_list: club.member_list, // запрашиваем мембер лист -- лист всех мемберов/лидеров клуба
                 });
             }
 
@@ -138,14 +158,103 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
 }
 
 
-let get_events = async function (club_name, return_type, cb) {
-    await db_root.child('events').child(club_name).on('value', clubs_snap => {
+export function enter_club(club_name)
+{
+    let user_clubs = store.state.MyClubsData.map(x => x.name);
+    console.log('user-clubs from enter_club: ', user_clubs);
+
+    if (user_clubs.length !== 0 && user_clubs.indexOf(club_name) === -1)
+    {
+        user_clubs.push(club_name);
+        console.log('tryna update clubs list for this user', club_name);
+        db_root
+            .child('users')
+            .child(USER_NAME)
+            .child('clubs')
+            .set(user_clubs.join(','));
+
+        let the_club = store.state.ClubsData.find(x => x.name === club_name);
+        let member_list = [...the_club.member_list.split(','), USER_NAME];
+        console.log('ща будет мясо', {the_club, member_list});
+        db_root
+            .child('clubs')
+            .child(club_name)
+            .child('member_list')
+            .set(member_list.join(','));
+
+        // update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
+        // update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
+        // update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
+        // update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
+    }
+    else
+    {
+        console.log('WE ARE ALREADY A MEMBER OF THIS CLUB');
+        console.log('SO WE LEAVE IT AS IS');
+    }
+}
+
+
+export function leave_club(club_name)
+{
+    let user_clubs = store.state.MyClubsData.map(x => x.name);
+    console.log('user-clubs from enter_club: ', user_clubs);
+
+    if (user_clubs.length !== 0 && user_clubs.indexOf(club_name) === -1)
+    {
+        console.log('WE ALREADY LEFT THE CLUB');
+        console.log('SO WE LEAVE IT AS IS');
+    }
+    else
+    {
+        let the_club_ind = user_clubs.indexOf(club_name);
+        while (the_club_ind !== -1)
+        {
+            user_clubs.splice(the_club_ind, 1);
+            the_club_ind = user_clubs.indexOf(club_name);
+        }
+
+        db_root
+            .child('users')
+            .child(USER_NAME)
+            .child('clubs')
+            .set(user_clubs.join(','));
+
+        let the_club = store.state.ClubsData.find(x => x.name === club_name);
+        let member_list = the_club.member_list.split(',');
+        let the_user_ind = member_list.indexOf(USER_NAME);
+        if (the_user_ind !== -1)
+        {
+            member_list.splice(the_user_ind, 1);
+
+            console.log('ща будет мясо', {the_club, member_list});
+            db_root
+                .child('clubs')
+                .child(club_name)
+                .child('member_list')
+                .set(member_list.join(','));
+        }
+
+        // update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
+        // update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
+        // update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
+        // update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
+    }
+}
+
+
+let get_events = async function (club_name, return_type, cb)
+{
+    await db_root.child('events').child(club_name).on('value', clubs_snap =>
+    {
         let all_events = clubs_snap.val();
         console.log('all events:', all_events);
 
         let res = [];
-        if (return_type !== 0) {
-            for (let e_id in all_events) {
+        if (return_type !== 0)
+        {
+            for (let e_id in all_events)
+            {
                 let e = all_events[e_id];
                 if (e.type === 1 && return_type === 1) {
                     res.push(e);
@@ -173,10 +282,11 @@ window.onload = function () {
         console.log('HELLO FROM GET EVENTS', {e_list});
     });
 };
-let rerenderEntireTree = () => {
-    ReactDOM.render(
+let rerenderEntireTree = () =>
+{
+    ReactDOM.render( // сделай рабочую версию -- мне надо тестануть //блччч щас сотри лишнее
         <React.StrictMode>
-            <App AppState={store.state}/>
+            <App AppState={store.state} dispatch={store.dispatch}/>
         </React.StrictMode>,
         document.getElementById('root')
     );

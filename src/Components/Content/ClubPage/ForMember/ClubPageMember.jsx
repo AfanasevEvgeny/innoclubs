@@ -3,22 +3,41 @@ import s from './ClubPageMember.module.css'
 import {DropdownButton, Dropdown, OverlayTrigger, Button, ListGroupItem, ListGroup, Card, Image} from "react-bootstrap";
 import {Popover} from "bootstrap";
 import Event from "../Event/Event";
-const ClubPageMember = (props) => {
+import store from "../../../../Redux/state"
+import {leave_club} from "../../../../index"
+
+const ClubPageMember = (props) =>
+{
     let clubLink = "/" + props.nameOfClub;
     let logo = props.logo;
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
     let events = props.events;
-    let eventList = events.map(event=><Event >)
+    let eventList;
+    if (events === null)
+    {
+        eventList = events.map(event => <Event brief={event.brief}/>)
+    }
+    else
+    {
+        eventList = []
+    }
+
+    let LeaveClub = () =>
+    {
+        leave_club(nameOfClub)
+        store._callSubscriber(store.state)
+        console.log(store);
+    }
+    console.log(events)
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>
                 <Card style={{width: '18rem'}}>
                     <Card.Header>Events</Card.Header>
                     <ListGroup variant="flush">
-                        <Event/>
-                        <Event/>
+                        {eventList}
                     </ListGroup>
                 </Card>
             </div>
@@ -35,7 +54,7 @@ const ClubPageMember = (props) => {
                         </Card.Body>
 
                         <Card.Footer className="text-muted">
-                            <Button variant="danger">Leave the club</Button>
+                            <Button variant="danger" onClick={LeaveClub}>Leave</Button>
                         </Card.Footer>
                     </Card></ListGroupItem>
                 </ListGroup>

@@ -1,3 +1,4 @@
+import joinClub_reducer from "./JoinClub-reducer"
 let store = {
     state: {
         ClubsData: [],
@@ -6,13 +7,22 @@ let store = {
         MyLeaderClubsData: [],
         get_events: undefined
     },
-    _callSubscriber() {
+    _callSubscriber()
+    {
 
     },
-    subscribe(observer) {
+    subscribe(observer)
+    {
         this._callSubscriber = observer;
     },
-    showEvents() {
+    showEvents()
+    { // я тупо не могу смотреть никак
+        this._callSubscriber(this.state)
+    },
+
+    dispatch(action)
+    {
+        this.state.MyMemberClubsData = joinClub_reducer(this.state.MyMemberClubsData, action)
         this._callSubscriber(this.state)
     }
 

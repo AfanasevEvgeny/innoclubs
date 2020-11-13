@@ -3,22 +3,32 @@ import s from './ClubPageUser.module.css'
 import {DropdownButton, Dropdown, OverlayTrigger, Button, ListGroupItem, ListGroup, Card, Image} from "react-bootstrap";
 import {Popover} from "bootstrap";
 import Event from "../Event/Event";
+import {enter_club} from "../../../../index"
+import store from "../../../../Redux/state"
 
-const ClubPageUser = (props) => {
+const ClubPageUser = (props) =>
+{
     let clubLink = "/" + props.nameOfClub;
     let logo = props.logo;
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
-    let eventsListToShow;
+    let eventList = props.events.map(event => <Event brief={event.brief}/>)
+
+    //
+    let JoinClub = () =>
+    {
+        enter_club(nameOfClub)
+        store._callSubscriber(store.state)
+
+    }
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>
                 <Card style={{width: '18rem'}}>
                     <Card.Header>Events</Card.Header>
                     <ListGroup variant="flush">
-                        <Event/>
-                        <Event/>
+                        {eventList}
                     </ListGroup>
                 </Card>
             </div>
@@ -35,13 +45,13 @@ const ClubPageUser = (props) => {
                         </Card.Body>
 
                         <Card.Footer className="text-muted">
-                            <Button variant="success">Join</Button>
+                            <Button variant="success" onClick={JoinClub}>Join</Button>
                         </Card.Footer>
                     </Card></ListGroupItem>
                 </ListGroup>
             </div>
             <div className={s.optionsWrapper}>
-                <h1>Contnacts</h1>
+                <h1>Contacts</h1>
                 <p>Telegram chat: undefined</p>
                 <p>Leader alias: undefined</p>
             </div>

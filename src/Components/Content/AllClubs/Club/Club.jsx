@@ -7,7 +7,6 @@ import {NavLink} from "react-router-dom";
 const Club = (props) => {
     let clubLink = "/" + props.nameOfClub;
     let logo = props.logo;
-    console.log(logo)
     return (
         <div className={s.clubWrapper}>
             <Card style={{width: '15rem'}}>
