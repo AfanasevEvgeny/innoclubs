@@ -165,17 +165,18 @@ export function enter_club(club_name)
 
     if (user_clubs.length !== 0 && user_clubs.indexOf(club_name) === -1)
     {
-        user_clubs.push(club_name);
-        console.log('tryna update clubs list for this user', club_name);
-        db_root
-            .child('users')
-            .child(USER_NAME)
-            .child('clubs')
-            .set(user_clubs.join(','));
+        if (user_clubs.indexOf(club_name) === -1)
+        {
+            user_clubs.push(club_name);
+            db_root
+                .child('users')
+                .child(USER_NAME)
+                .child('clubs')
+                .set(user_clubs.join(','));
+        }
 
         let the_club = store.state.ClubsData.find(x => x.name === club_name);
         let member_list = [...the_club.member_list.split(','), USER_NAME];
-        console.log('ща будет мясо', {the_club, member_list});
         db_root
             .child('clubs')
             .child(club_name)
@@ -183,7 +184,7 @@ export function enter_club(club_name)
             .set(member_list.join(','));
 
         // update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
-        // update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
+        update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
         // update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
         // update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
     }
@@ -198,7 +199,6 @@ export function enter_club(club_name)
 export function leave_club(club_name)
 {
     let user_clubs = store.state.MyClubsData.map(x => x.name);
-    console.log('user-clubs from enter_club: ', user_clubs);
 
     if (user_clubs.length !== 0 && user_clubs.indexOf(club_name) === -1)
     {
@@ -226,8 +226,6 @@ export function leave_club(club_name)
         if (the_user_ind !== -1)
         {
             member_list.splice(the_user_ind, 1);
-
-            console.log('ща будет мясо', {the_club, member_list});
             db_root
                 .child('clubs')
                 .child(club_name)
@@ -236,7 +234,7 @@ export function leave_club(club_name)
         }
 
         // update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
-        // update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
+        update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
         // update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
         // update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
     }
@@ -275,9 +273,7 @@ let get_events = async function (club_name, return_type, cb)
 };
 
 window.onload = function () {
-
     store.state.get_events = get_events;
-
     store.state.get_events("sb_club", 1, (e_list) => {
         console.log('HELLO FROM GET EVENTS', {e_list});
     });
