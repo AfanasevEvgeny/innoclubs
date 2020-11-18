@@ -34,13 +34,12 @@ let db_root = firebase.database().ref();
 // todo ...sign-in here...
 
 // User creds
-let USER_NAME = "aladdinych"; // hardcode / that's when we get the user_name
-$("#your_name_holder").html("You are: " + USER_NAME + "\n");
+window.USER_NAME = "UNDEFINED USER"; // hardcode / that's when we get the user_name
 
 update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
-update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
-update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
-update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
+// update_my_clubs(window.USER_NAME, "member"); // get USER_NAME's clubs (member)
+// update_my_clubs(window.USER_NAME, "leader"); // get USER_NAME's clubs (lead)
+// update_my_clubs(window.USER_NAME); // get USER_NAME's clubs (lead)
 
 /**
  * procedure that fetches Clubs data from Database and loads it into state
@@ -60,6 +59,7 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
 {
     if (user_name !== undefined)
     {
+        console.log('updating clubs for', user_name);
         let user_clubs;
         // Request user's clubs
         let fetch = _ =>
@@ -96,11 +96,16 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
                     }
 
                     if (i === user_clubs.length - 1) {
-                        if (role === undefined) {
+                        if (role === undefined)
+                        {
                             store.state.MyClubsData = clubs_to_show;
-                        } else if (role === "member") {
+                        }
+                        else if (role === "member")
+                        {
                             store.state.MyMemberClubsData = clubs_to_show;
-                        } else if (role === "leader") {
+                        }
+                        else if (role === "leader")
+                        {
                             store.state.MyLeaderClubsData = clubs_to_show;
                         }
                         window.can_render = true;
@@ -124,20 +129,31 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
         db_root.child('users').child(user_name).child('clubs').on('value', function (uclubs_snap)
         {
             // Getting the list of all user's clubs from DB & parsing it into JS object
+            // try {
             user_clubs = uclubs_snap.val();
+            if (user_clubs === null)
+            {
+                return;
+            }
             user_clubs = user_clubs.split(',');
             fetch();
+            // }
+            // catch(e) {console.log('ERROR!', e)};
         });
-    } else {
+    }
+    else
+    {
         let all_clubs;
         // Request all the clubs
-        db_root.child('clubs').on('value', function (clubs_snap) {
+        db_root.child('clubs').on('value', function (clubs_snap)
+        {
             all_clubs = clubs_snap.val();
             // console.log('all clubs:', all_clubs);
 
             let clubs_to_show = [];
             let i = 0;
-            for (let club_name in all_clubs) {
+            for (let club_name in all_clubs)
+            {
                 let club = all_clubs[club_name]; // current club
                 clubs_to_show.push({
                     id: i++,
@@ -157,6 +173,9 @@ function update_my_clubs(user_name, role) // role -> perm_mask in the future
     }
 }
 
+// setInterval(_=>{
+//     console.log(store.state);
+// })
 
 export function enter_club(club_name)
 {
@@ -172,13 +191,13 @@ export function enter_club(club_name)
             user_clubs = Array.from(temp);
             db_root
                 .child('users')
-                .child(USER_NAME)
+                .child(window.USER_NAME)
                 .child('clubs')
                 .set(user_clubs.join(','));
         }
 
         let the_club = store.state.ClubsData.find(x => x.name === club_name);
-        let member_list = [...the_club.member_list.split(','), USER_NAME];
+        let member_list = [...the_club.member_list.split(','), window.USER_NAME];
         db_root
             .child('clubs')
             .child(club_name)
@@ -186,7 +205,7 @@ export function enter_club(club_name)
             .set(member_list.join(','));
 
         // update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
-        update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
+        update_my_clubs(window.USER_NAME, "member"); // get USER_NAME's clubs (member)
         // update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
         // update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
     }
@@ -218,13 +237,13 @@ export function leave_club(club_name)
 
         db_root
             .child('users')
-            .child(USER_NAME)
+            .child(window.USER_NAME)
             .child('clubs')
             .set(user_clubs.join(','));
 
         let the_club = store.state.ClubsData.find(x => x.name === club_name);
         let member_list = the_club.member_list.split(',');
-        let the_user_ind = member_list.indexOf(USER_NAME);
+        let the_user_ind = member_list.indexOf(window.USER_NAME);
         if (the_user_ind !== -1)
         {
             member_list.splice(the_user_ind, 1);
@@ -236,7 +255,7 @@ export function leave_club(club_name)
         }
 
         // update_my_clubs(); // get all the clubs (cuz it's a no-parameter call)
-        update_my_clubs(USER_NAME, "member"); // get USER_NAME's clubs (member)
+        update_my_clubs(window.USER_NAME, "member"); // get USER_NAME's clubs (member)
         // update_my_clubs(USER_NAME, "leader"); // get USER_NAME's clubs (lead)
         // update_my_clubs(USER_NAME); // get USER_NAME's clubs (lead)
     }
@@ -256,13 +275,18 @@ let get_events = async function (club_name, return_type, cb)
             for (let e_id in all_events)
             {
                 let e = all_events[e_id];
-                if (e.type === 1 && return_type === 1) {
+                if (e.type === 1 && return_type === 1)
+                {
                     res.push(e);
-                } else if (e.type === 2 && return_type === 2) {
+                }
+                else if (e.type === 2 && return_type === 2)
+                {
                     res.push(e);
                 }
             }
-        } else {
+        }
+        else
+        {
             res = all_events;
         }
 
@@ -274,12 +298,65 @@ let get_events = async function (club_name, return_type, cb)
     return true;
 };
 
-window.onload = function () {
+let auth = firebase.auth();
+
+export function authenticate(E, P)
+{
+    let email = E;
+    let pass = P;
+    auth.signInWithEmailAndPassword(email, pass)
+        .catch(err =>
+        {
+            console.log(err);
+        });
+    auth.createUserWithEmailAndPassword(email, pass)
+        .catch(err =>
+        {
+            console.log(err);
+        });
+
+    auth.onAuthStateChanged(fbUser =>
+    {
+        console.log('somethign', email, pass);
+        if (fbUser)
+        {
+            console.log('success login', {fbUser});
+            window.loggedIn = true;
+            window.USER_NAME = fbUser.email.split('@')[0];
+            console.log('window user name', window.USER_NAME);
+
+            update_my_clubs();
+            update_my_clubs(window.USER_NAME, "member");
+            update_my_clubs(window.USER_NAME, "leader");
+            update_my_clubs(window.USER_NAME);
+        }
+        else
+        {
+            console.log('not logged in');
+            window.loggedIn = false;
+        }
+        // console.log({ userData });
+    });
+}
+
+export function signout()
+{
+    auth.signOut();
+    store.state.ClubsData = [];
+    store.state.MyClubsData = [];
+    store.state.MyMemberClubsData = [];
+    store.state.MyLeaderClubsData = [];
+}
+
+window.onload = function ()
+{
     store.state.get_events = get_events;
-    store.state.get_events("sb_club", 1, (e_list) => {
+    store.state.get_events("sb_club", 1, (e_list) =>
+    {
         console.log('HELLO FROM GET EVENTS', {e_list});
     });
 };
+
 let rerenderEntireTree = () =>
 {
     ReactDOM.render( // сделай рабочую версию -- мне надо тестануть //блччч щас сотри лишнее
@@ -288,9 +365,12 @@ let rerenderEntireTree = () =>
         </React.StrictMode>,
         document.getElementById('root')
     );
-}
-window.try_render = setInterval(function () {
-    if (window.can_render) {
+};
+
+window.try_render = setInterval(function ()
+{
+    if (window.can_render)
+    {
         console.log('YES I CAN RENDER NOW FINALLY!!!!!!!!');
         rerenderEntireTree(store.state)
         store.subscribe(rerenderEntireTree);

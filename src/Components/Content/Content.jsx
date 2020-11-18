@@ -9,7 +9,7 @@ import Particles from "react-particles-js";
 
 const Content = (props) => {
     console.log(props.ClubsData)
-    let ClubPageList = props.ClubsData.map(clubInfo => <Route path={'/' + clubInfo.name}
+    let ClubPageList = props.ClubsData.map(clubInfo => <Route path={'/main/' + clubInfo.name}
                                                               render={() => <ClubPage nameOfClub={clubInfo.name}
                                                                                       clubsMemberForCheck={props.MyMemberClubsData}
                                                                                       clubsLeaderCheck={props.MyLeaderClubsData}
@@ -24,9 +24,11 @@ const Content = (props) => {
 
     return (
         <div className={s.content}>
-            <Route path='/allClubs' render={() => <AllClubs ClubsData={props.ClubsData}/>}/>
-            <Route path='/myMemberClubs' render={() => <MyClubs MyMemberClubsData={props.MyMemberClubsData}/>}/>
-            <Route path='/myLeaderClubs' render={() => <MyLeaderClubs MyLeaderClubsData={props.MyLeaderClubsData}/>}/>
+            <Route exact path='/main/allClubs' render={() => <AllClubs ClubsData={props.ClubsData}/>}/>
+            <Route exact path='/main/myMemberClubs'
+                   render={() => <MyClubs MyMemberClubsData={props.MyMemberClubsData}/>}/>
+            <Route exact path='/main/myLeaderClubs'
+                   render={() => <MyLeaderClubs MyLeaderClubsData={props.MyLeaderClubsData}/>}/>
             {/*here we need to map all club pages <Route path='/sb_club' render={()=><ClubPage/>}/>*/}
             {ClubPageList}
         </div>

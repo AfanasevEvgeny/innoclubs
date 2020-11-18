@@ -9,7 +9,7 @@ const MenuNav = () => {
     return (
         <div className={s.menuNav}>
             <div className={s.sidenav}>
-                <NavLink to="/allClubs"><h3>| All clubs</h3></NavLink>
+                <NavLink to="/main/allClubs"><h3>| All clubs</h3></NavLink>
                 <NavLink to="#"><h3>| My Profile</h3></NavLink>
                 <NavLink to="#"><h3>| Contacts</h3></NavLink>
                 <div className={s.item}>
@@ -18,8 +18,8 @@ const MenuNav = () => {
                             <h3>My clubs</h3>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <NavLink to="/myMemberClubs"><p>As a Member</p></NavLink>
-                            <NavLink to="/myLeaderClubs"><p>As a Leader</p></NavLink>
+                            <NavLink to="/main/myMemberClubs"><p>As a Member</p></NavLink>
+                            <NavLink to="/main/myLeaderClubs"><p>As a Leader</p></NavLink>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
