@@ -12,7 +12,6 @@ import firebase from 'firebase';
 // import App from "./App";
 // import state from "../../src/Redux/state";
 console.log("hello from main.js");
-
 // Firebase configuration
 let firebaseConfig = {
     apiKey: "AIzaSyAlj67iRYa59NAxQh_tcUR3cAJfY3etdvE",

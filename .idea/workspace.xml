@@ -26,18 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="Change functionality of button and form (front part)">
+    <list default="true" id="eeee1a9b-58b4-40ef-9d08-6da34b6db4c4" name="Default Changelist" comment="fix index html,&#10;fix member and user view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/AllClubs/Club/Club.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ClubPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForMember/ClubPageMember.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUSer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/ClubPage/ForUser/ClubPageUSer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/MenuNav.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +178,7 @@
       <workItem from="1605303347206" duration="1352000" />
       <workItem from="1605305600153" duration="136000" />
       <workItem from="1605735684453" duration="4746000" />
-      <workItem from="1605867304632" duration="6360000" />
+      <workItem from="1605867304632" duration="8756000" />
     </task>
     <task id="LOCAL-00001" summary="branched the project into public and server folders:&#10;public for everything front-end&#10;and server for the back-end part of the project&#10;&#10;also: added index.html">
       <created>1600691230012</created>
@@ -434,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605613839214</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fix index html,&#10;fix member and user view">
+      <created>1605973732868</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1605973732868</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +464,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="should hopefully work with heroku&#10;(added proc)" />
     <MESSAGE value="should hopefully work with heroku&#10;(added proc)&#10;attempt #3&#10;restructured the project for heroku" />
     <MESSAGE value="heroku test #4" />
     <MESSAGE value="heroku test #5" />
@@ -491,7 +488,8 @@
     <MESSAGE value="bug fixes for join/leave buttons" />
     <MESSAGE value="login page created, path = '/login'&#10;form is unavailable" />
     <MESSAGE value="Change functionality of button and form (front part)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change functionality of button and form (front part)" />
+    <MESSAGE value="fix index html,&#10;fix member and user view" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix index html,&#10;fix member and user view" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -545,12 +543,12 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2664" y="240" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604956187008" />
-    <state x="2347" y="220" key="Vcs.Push.Dialog.v2" timestamp="1605613849742">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605973757020">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605305768457" />
     <state x="2347" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605613849742" />
-    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604961391665" />
+    <state x="341" y="174" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605973757020" />
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604956716892">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
