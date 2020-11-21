@@ -28,7 +28,7 @@ const ClubPage = (props) => {
         return (
             <ClubPageMember nameOfClub={props.nameOfClub} description={props.description} logo={props.logo}
                             brief={props.brief}
-                            events={props.brief}
+                            events={props.events}
                             dispatch={props.dispatch}
             />
         );

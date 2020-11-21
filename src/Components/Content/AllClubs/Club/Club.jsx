@@ -5,7 +5,7 @@ import {Button} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
 const Club = (props) => {
-    let clubLink = "/" + props.nameOfClub;
+    let clubLink = "/main/" + props.nameOfClub;
     let logo = props.logo;
     return (
         <div className={s.clubWrapper}>

@@ -28,7 +28,9 @@ const ClubPageUser = (props) =>
                 <Card style={{width: '18rem'}}>
                     <Card.Header>Events</Card.Header>
                     <ListGroup variant="flush">
-                        {eventList}
+                        <br/>
+                        Join the club to see events
+                        <br/>
                     </ListGroup>
                 </Card>
             </div>

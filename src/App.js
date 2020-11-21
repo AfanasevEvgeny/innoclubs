@@ -12,8 +12,8 @@ import Login from "./Components/Login/Login";
 const App = (props) => {
     return (
         <BrowserRouter>
-            <Route path='/login' render={() => <Login/>}/>
-            <Route exact path='/' render={() =>
+            <Route exact path='/login' render={() => <Login/>}/>
+            <Route path='/main/' render={() =>
                 <div className="AppWrapper">
                     <TopNav/>
                     <MenuNav/>

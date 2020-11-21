@@ -13,24 +13,14 @@ const ClubPageMember = (props) =>
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
-    let events = props.events;
-    let eventList;
-    if (events === null)
-    {
-        eventList = events.map(event => <Event brief={event.brief}/>)
-    }
-    else
-    {
-        eventList = []
-    }
+    let eventList = props.events.map(event => <Event brief={event.brief}/>)
+    console.log(props.events)
 
-    let LeaveClub = () =>
-    {
+    let LeaveClub = () => {
         leave_club(nameOfClub)
         store._callSubscriber(store.state)
         console.log(store);
     }
-    console.log(events)
     return (
         <div className={s.ClubPageMemberWrapper}>
             <div className={s.eventsWrapper}>
@@ -60,7 +50,7 @@ const ClubPageMember = (props) =>
                 </ListGroup>
             </div>
             <div className={s.optionsWrapper}>
-                <h1>Contnacts</h1>
+                <h1>Contacts</h1>
                 <p>Telegram chat: undefined</p>
                 <p>Leader alias: undefined</p>
             </div>
