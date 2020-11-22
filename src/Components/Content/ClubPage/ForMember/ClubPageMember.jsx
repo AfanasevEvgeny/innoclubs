@@ -13,7 +13,7 @@ const ClubPageMember = (props) =>
     let nameOfClub = props.nameOfClub;
     let description = props.description;
     let brief = props.brief;
-    let eventList = props.events.map(event => <Event brief={event.brief}/>)
+    let eventList = props.events.map(event => <Event brief={event.brief} description={event.description} name={event.name}/>)
     console.log(props.events)
 
     let LeaveClub = () => {
