@@ -18,6 +18,7 @@ const Event = (props) => {
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
             <h1>{props.name}</h1>
             <p1>{props.description}</p1>
+                    <br/>
             <Button variant="success">Apply for attendance</Button>
 
                     <Button variant="primary" onClick={() => setModalIsOpen(false)}>Close</Button>
