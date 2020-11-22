@@ -288,10 +288,10 @@ export function authenticate(E, P) {
         .catch(err => {
             console.log(err);
         });
-    auth.createUserWithEmailAndPassword(email, pass)
+    /*auth.createUserWithEmailAndPassword(email, pass)
         .catch(err => {
             console.log(err);
-        });
+        });*/
 
     auth.onAuthStateChanged(fbUser => {
         console.log('somethign', email, pass);
