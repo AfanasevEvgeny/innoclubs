@@ -16,8 +16,11 @@ const Event = (props) => {
                     setModalIsOpen(true);
                 }}>Available</Button>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                    <h1>Here will be information about event, attendance tracking interface</h1>
-                    <Button variant="success" onClick={() => setModalIsOpen(false)}>{f}</Button>
+            <h1>{props.name}</h1>
+            <p1>{props.description}</p1>
+            <Button variant="success">Apply for attendance</Button>
+
+                    <Button variant="primary" onClick={() => setModalIsOpen(false)}>Close</Button>
                 </Modal>
             </ListGroup.Item>
         </div>
