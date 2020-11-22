@@ -307,7 +307,6 @@ export function authenticate(E, P) {
             update_my_clubs(window.USER_NAME);
         } else {
             console.log('not logged in');
-            alert('Incorrect password :c    Try again!');
             // window.loggedIn = false;
         }
         // console.log({ userData });
