@@ -19,7 +19,7 @@ const Event = (props) => {
             <h1>{props.name}</h1>
             <p1>{props.description}</p1>
                     <br/>
-            <Button variant="success" onClick={alert("request sent!")}>Apply for attendance</Button>
+            <Button variant="success" onClick={()=>alert("request sent!")}>Apply for attendance</Button>
 
                     <Button variant="primary" onClick={() => setModalIsOpen(false)}>Close</Button>
                 </Modal>
